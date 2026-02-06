@@ -1,0 +1,773 @@
+/* ---------------- GLOBAL ---------------- */
+body {
+  margin: 0;
+
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #111;
+  overflow-x: hidden;
+
+}
+
+/* Make all images centered by default */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+/* ---------------- NAVBAR ---------------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  /* Mintlify gradient + blur */
+  backdrop-filter: blur(14px);
+
+
+
+}
+
+.nav-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 16px 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+/* Logo */
+.nav-logo img {
+  height: 28px;
+}
+
+/* Center links */
+.nav-links {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #0f0d0d;
+  font-size: 15px;
+  font-weight: 500;
+  opacity: 0.95;
+}
+
+.nav-links a:hover {
+  opacity: 0.75;
+}
+
+/* Right buttons */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* ---------------- BUTTONS ---------------- */
+.btn {
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+
+/* Contact sales */
+.btn-ghost {
+  background: rgb(226, 223, 223);
+  color: #070404;
+}
+
+.btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* Start for free */
+.btn-white {
+  background: rgb(226, 223, 223);
+  color: #111;
+}
+
+.btn-white:hover {
+  background: #d0cccc;
+}
+
+
+/* ---------------- BUTTONS ---------------- */
+.btn {
+  padding: 10px 18px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background: #000;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #222;
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.btn-outline {
+  background: #fff;
+  border: 1px solid #000;
+  color: #000;
+}
+
+.btn-outline:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* ---------------- HERO ---------------- */
+.hero {
+  min-height: 100vh;
+  padding: 27px 20px 180px;
+
+  /* background layers */
+  background-image:
+    url(""),
+    url("Hero_main_background.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center bottom, center;
+  background-size: 900px auto, cover;
+
+  /* CENTER EVERYTHING */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+
+/* ---------------- ANNOUNCEMENT ---------------- */
+/* FORCE center container */
+.hero-announcement {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 255px;
+  margin-top: -245px;
+  padding: 8px 16px;
+  gap: 10px;
+
+  border-radius: 999px;
+
+  background: rgba(222, 209, 209, 0.55);
+  backdrop-filter: blur(14px);
+  color: white;
+
+  font-size: 14px;
+  text-align: center;
+}
+
+/* NEW badge */
+.hero-announcement .badge {
+  background: #16a34a;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+/* Text */
+.hero-announcement .announcement-text {
+  white-space: nowrap;
+}
+
+
+.badge {
+  background: #16a34a;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.arrow {
+  font-size: 18px;
+}
+
+/* MAIN HERO HEADING */
+.hero h1 {
+  font-size: 56px;
+  color: rgb(245, 240, 240);
+  font-family: Inter, "Inter Fallback", system-ui, sans-serif;
+  text-align: center;
+}
+
+/* INTELLIGENT HEADING – TOP SPACING */
+.h1_Intelligent {
+  margin-top: -212px;
+  margin-bottom: 48px;
+}
+
+/* SUBTITLE */
+.hero-subtitle {
+  max-width: 700px;
+  font-size: 20px;
+  color: #d1d5db;
+  margin: 0 auto 36px;
+  /* center + spacing */
+  text-align: center;
+}
+
+
+
+
+/* ---------------- INPUT (FIXED) ---------------- */
+.hero-input {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 6px;
+  border-radius: 999px;
+
+  background: rgba(222, 209, 209, 0.55);
+  backdrop-filter: blur(14px);
+
+  width: 420px;
+  max-width: 90%;
+}
+
+/* Email input */
+.hero-input input {
+  flex: 1;
+  border: none;
+
+  outline: none;
+  background: transparent;
+
+  padding: 14px 18px;
+  font-size: 15px;
+  color: white;
+}
+
+.hero-input input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Button */
+.hero-input button {
+  border: none;
+  padding: 12px 22px;
+  border-radius: 999px;
+
+  background: #ffffff;
+  color: #111;
+  font-weight: 600;
+  font-size: 14px;
+
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.hero-input button:hover {
+  background: #f0f0f0;
+}
+
+/* HERO IMAGE */
+.image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: -371px;
+  margin-bottom: 80px;
+}
+
+.image-section img {
+  width: 80%;
+  height: auto;
+  max-width: 1200px;
+}
+
+
+/* ---------------- TRUSTED / LOGOS ---------------- */
+.trusted {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  /* center image */
+}
+
+.trusted img {
+  width: 70%;
+  /* 70% width */
+  height: auto;
+  /* keep aspect ratio */
+  max-width: 1000px;
+  /* optional limit */
+}
+
+
+/* ---------------- SECTIONS ---------------- */
+.section-center {
+  max-width: 800px;
+  margin: 120px auto 60px;
+  text-align: center;
+  font-family: inter, "inter Fallback";
+}
+
+.section-center h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.section-center p {
+  font-size: 18px;
+  color: #6b7280;
+}
+
+/* ---------------- FEATURES ---------------- */
+.feature-grid {
+  max-width: 850px;
+  margin: 43px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.feature-card {
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 40px;
+  border: 1px solid #e5e7eb;
+}
+
+.feature-card h3 {
+  font-size: 26px;
+  margin: 12px 0;
+}
+
+.feature-card p {
+  font-size: 16px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.eyebrow {
+  font-size: 13px;
+  font-weight: 600;
+  color: #0c8c5e;
+  letter-spacing: 0.08em;
+}
+
+.feature-image {
+  width: 100%;
+  height: auto;
+  margin-top: 32px;
+  border-radius: 16px;
+}
+
+
+/* ---------------- ENTERPRISE ---------------- */
+.assistant-section {
+  max-width: 740px;
+  margin: -25px auto;
+  padding: 80px 60px;
+
+  background: #ffffff;
+  border-radius: 36px;
+  border: 1px solid #e5e7eb;
+
+  text-align: center;
+}
+
+/* Heading */
+.assistant-section h2 {
+  font-size: 40px;
+  margin: 16px 0;
+}
+
+/* Subtitle */
+.assistant-subtitle {
+  max-width: 720px;
+  margin: 0 auto 56px;
+  font-size: 18px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* Cards / Image container */
+.assistant-cards {
+  display: flex;
+  justify-content: center;
+}
+
+/* Image inside */
+.assistant-cards img {
+  width: 90%;
+  max-width: 1000px;
+  height: auto;
+}
+
+/* ---------------- CASE STUDY IMAGE ---------------- */
+.enterprise-section {
+  width: 100%;
+  padding: 120px 24px;
+  background: #ffffff;
+}
+
+.enterprise-inner {
+  max-width: 1100px;
+  /* 👈 WIDTH CONTROL */
+  margin: 0 auto;
+}
+
+/* ---------- TOP ROW ---------- */
+.enterprise-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.enterprise-text {
+  max-width: 620px;
+}
+
+.eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: #0c8c5e;
+}
+
+.enterprise-text h2 {
+  font-size: 44px;
+  margin: 16px 0;
+  line-height: 1.2;
+}
+
+.enterprise-text p {
+  font-size: 18px;
+  color: #6b7280;
+}
+
+/* ---------- BUTTON ---------- */
+.enterprise-btn {
+  background: #000;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* ---------- BOTTOM ROW ---------- */
+/* 
+.enterprise-features {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  
+}
+
+.feature h4 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.feature p {
+  font-size: 16px;
+  color: #6b7280;
+  line-height: 1.6;
+} */
+
+
+/* ---------- FULL WIDTH BACKGROUND ---------- */
+.enterprise-section {
+  width: 100%;
+  background: #faf9f6;
+  padding: 120px 24px;
+  margin-top: 160px;
+}
+
+/* ---------- CONTENT WIDTH CONTROL ---------- */
+.enterprise-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ---------- HEADER ---------- */
+.enterprise-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 48px;
+}
+
+.enterprise-text {
+  max-width: 640px;
+}
+
+.eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: #0c8c5e;
+}
+
+.enterprise-text h2 {
+  font-size: 44px;
+  margin: 16px 0;
+  line-height: 1.2;
+}
+
+.enterprise-text p {
+  font-size: 18px;
+  color: #6b7280;
+}
+
+/* ENTERPRICE IMAGE */
+
+.enterprise-image {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.enterprise-image img {
+  width: 65%;
+  max-width: 1000px;
+  height: auto;
+  border-radius: 16px;
+}
+
+.enterprise-image img:hover {
+  box-shadow:
+    inset 90px 0 40px -70px rgba(187, 51, 51, 0.8),
+    /* left inside shadow */
+    inset -40px 0 40px -20px rgba(45, 33, 33, 0.8);
+  /* right inside shadow */
+}
+
+/* ---------- BUTTON ---------- */
+.enterprise-btn {
+  background: #000;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* ---------- FEATURES ---------- */
+.enterprise-features {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
+.feature h4 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.feature p {
+  font-size: 16px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+  .enterprise-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .enterprise-features {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .enterprise-text h2 {
+    font-size: 34px;
+  }
+}
+
+
+/* ---------------- FINAL CTA ---------------- */
+.final-cta {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* section height */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin-top: 70px;
+
+}
+
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+
+/* ---------------- FOOTER ---------------- */
+/* Header */
+.site-header {
+  /* background-color: #fff; */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  /* height: 30px; */
+  /* width: 100%; */
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #dfafaf;
+  height: 10vh;
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.logo {
+  height: 40px;
+}
+
+.social-icons img {
+  height: 20px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #f9f9f9;
+  padding: 60px 40px 20px 40px;
+  font-family: sans-serif;
+  color: #333;
+}
+
+.footer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.footer-grid div {
+  min-width: 150px;
+}
+
+.footer-grid h4 {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.footer-grid a {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-grid a:hover {
+  text-decoration: underline;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.security-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.security-badge img {
+  height: 40px;
+}
+
+.system-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #4CAF50;
+  /* green */
+}
+
+/* Copyright */
+.site-footer .copyright {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  font-size: 14px;
+  text-align: center;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
